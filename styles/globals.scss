@@ -47,6 +47,20 @@ body {
     margin: 0 auto;
 }
 
+.heading {
+    h3 {
+        font-family: $ff-pixel;
+        text-transform: uppercase;
+        font-size: 25px;
+        letter-spacing: .5px;
+    }
+}
+
+ p {
+    font-size: 19px;
+    font-weight: 500;
+ }
+
 /****************//****************/
 /* NAVBAR */
 /****************//****************/
@@ -57,6 +71,14 @@ body {
     justify-content: space-between;
     align-items: flex-start;
 
+    div[class="logo"] {
+        h3 {
+            display: flex;
+            align-items: center;
+            gap: 3px;
+        }
+    }
+
     div[class="links"] {
         display: flex;
         flex-direction: column;
@@ -64,7 +86,7 @@ body {
 
         a {
             text-transform: uppercase;
-            font-weight: 600;
+            font-weight: 700;
             transition: $hvr-transition;
 
             &:hover {
@@ -85,7 +107,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding-block: 35px 60px;
+    padding-block: 35px 100px;
 
     h1 {
         font-family: $ff-heading;
@@ -106,16 +128,52 @@ body {
 /****************//****************/
 
 /****************//****************/
+/* ABOUT */
+/****************//****************/
+.folio-about {
+    div[class="heading"] {
+        span {
+            font-family: $ff-pixel;
+            text-transform: uppercase;
+            font-size: 25px;
+            letter-spacing: .5px;
+        }
+    }
+
+    div[class="about-body"] {
+        padding-block: 25px 80px;
+
+        >p {
+            padding-bottom: 25px;
+        }
+
+        .stack {
+            h4 {
+                font-family: $ff-pixel;
+                text-transform: uppercase;
+                font-size: 18px;
+                letter-spacing: .5px;
+                padding-top: 10px;
+            }
+
+            p {
+                font-size: 17px;
+                font-weight: 600;
+            }
+        }
+    }
+}
+
+/****************//****************/
+/* END OF ABOUT */
+/****************//****************/
+
+/****************//****************/
 /* WORK */
 /****************//****************/
 .folio-work {
-    h1 {
-        text-transform: uppercase;
-        font-size: $hd-h1-norm;
-        font-family: $ff-heading;
-        text-align: center;
-    }
-}
+    padding-bottom: 80px;
+} 
 
 .folio-work-showcase {
     div[class="work-divider"] {
@@ -127,4 +185,64 @@ body {
 }
 /****************//****************/
 /* END OF WORK */
+/****************//****************/
+
+/****************//****************/
+/* CONTACT */
+/****************//****************/
+.folio-contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 80px;
+    gap: 15px;
+
+    h1 {
+        text-transform: capitalize;
+        font-family: $ff-heading;
+        font-weight: 800;
+        font-size: 50px;
+    }
+
+    p {
+        width: 40%;
+        text-align: center;
+        font-weight: 600;
+    }
+
+    button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100px;
+        height: 40px;
+        font-size: 15px;
+        background-color: $clr-grey;
+        color: $clr-bg;
+        border: 0.5px solid transparent;
+        cursor: pointer;
+    }
+}
+/****************//****************/
+/* END OF CONTACT */
+/****************//****************/
+
+/****************//****************/
+/* FOOTER */
+/****************//****************/
+.folio-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 25px;
+
+    .socials {
+        display: flex;
+        align-items: center;
+        gap: 17px;
+    }
+}
+/****************//****************/
+/* END OF FOOTER */
 /****************//****************/

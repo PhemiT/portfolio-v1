@@ -8,8 +8,11 @@ import {
     Header,
     Work,
     Contact,
-    Footer
+    Footer,
+    About
 } from "../modules"
+
+const favicon = <Icon icon={ICONS.codelogo} />
 
 const Home: NextPage = () => {
   return (
@@ -21,6 +24,7 @@ const Home: NextPage = () => {
       </Head>
       <Nav />
       <Header />
+      <About />
       <Work />
       <Contact />
       <Footer />

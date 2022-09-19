@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@300;400;500;600;700;800;900&family=Syne:wght@400;500;600;700;800&family=VT323&display=swap');
+
+/* FONTS */
+$ff-heading: 'Syne', sans-serif;
+$ff-main: 'Darker Grotesque', sans-serif;
+$ff-pixel: 'VT323', monospace;
+
+/* COLORS */
+$clr-black: #000000;
+$clr-white: #ffffff;
+$clr-grey: #333332;
+$clr-bg: #F3F3FF;
+
+/* SIZES */
+$container-lg: 93%;
+$container-md: 94%;
+$container-sm: 97%;
+$hd-h1-norm: 65px;
+
+/* TRANSITIONS */
+$hvr-transition: all 450ms ease-in-out; 

@@ -1,0 +1,130 @@
+@import "variables";
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    font-family: $ff-main;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+img,
+video {
+    width: 100%;
+    object-fit: cover;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: $clr-bg;
+    color: $clr-grey
+}
+
+.mg-container {
+    width: $container-lg;
+    margin: 0 auto;
+}
+
+/****************//****************/
+/* NAVBAR */
+/****************//****************/
+.folio-nav {
+    padding: 25px 50px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    div[class="links"] {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+
+        a {
+            text-transform: uppercase;
+            font-weight: 600;
+            transition: $hvr-transition;
+
+            &:hover {
+                color: purple;
+            }
+        }
+    }
+}
+/****************//****************/
+/* END OF NAVBAR */
+/****************//****************/
+
+/****************//****************/
+/* HEADER */
+/****************//****************/
+.folio-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-block: 35px 60px;
+
+    h1 {
+        font-family: $ff-heading;
+        font-size: 120px;
+        line-height: 140px;
+        font-weight: 800;
+        text-transform: uppercase;
+        text-align: center;
+    }
+
+    p {
+        font-size: 20px;
+        text-align: center;
+    }
+}
+/****************//****************/
+/* END OF HEADER */
+/****************//****************/
+
+/****************//****************/
+/* WORK */
+/****************//****************/
+.folio-work {
+    h1 {
+        text-transform: uppercase;
+        font-size: $hd-h1-norm;
+        font-family: $ff-heading;
+        text-align: center;
+    }
+}
+
+.folio-work-showcase {
+    div[class="work-divider"] {
+        width: 98%;
+        height: 1.2px;
+        margin: 20px auto;
+        background: $clr-grey;
+    }
+}
+/****************//****************/
+/* END OF WORK */
+/****************//****************/

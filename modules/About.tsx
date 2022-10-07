@@ -14,11 +14,13 @@ const About = () => {
                     <h4>Styling:</h4>
                     <p>CSS, SCSS, Styled Components, TailwindCSS</p>
                     <h4>Frameworks/Libraries:</h4>
-                    <p>ReactJS, NextJS, Angular, NodeJS</p>
+                    <p>ReactJS, NextJS, Angular, NodeJS, Express</p>
                     <h4>Storages/Databases:</h4>
                     <p>MongoDB, Firestore</p>
+                    <h4>No Code Tools:</h4>
+                    <p>WordPress, WebFlow</p>
                     <h4>Other tools:</h4>
-                    <p>Git/GitHub, Figma, AdobeXD, WordPress</p>
+                    <p>Git/GitHub, Figma, AdobeXD</p>
 
                 </div>
             </div>

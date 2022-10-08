@@ -11,10 +11,15 @@ import {
     Footer,
     About
 } from "../modules"
+import { NavContext } from '../helpers/NavContext'
+import { useState } from 'react'
+import NavMenu from '../modules/NavMenu'
 
 const favicon = <Icon icon={ICONS.codelogo} />
 
 const Home: NextPage = () => {
+  const [menuActive, setMenuActive] = useState(false)
+
   return (
     <div className={styles.container}>
       <Head>
@@ -22,12 +27,15 @@ const Home: NextPage = () => {
         <meta name="description" content="Olubukunmi Olufemi's Portfolio" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <Nav />
-      <Header />
-      <About />
-      <Work />
-      <Contact />
-      <Footer />
+      <NavContext.Provider value={{menuActive, setMenuActive}}>
+        <Nav />
+        <NavMenu />
+        <Header />
+        <About />
+        <Work />
+        <Contact />
+        <Footer />
+      </NavContext.Provider>
     </div>
   )
 }

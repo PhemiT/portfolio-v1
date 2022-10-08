@@ -22,6 +22,7 @@ const Home: NextPage = () => {
 
   return (
     <div className={styles.container}>
+      <div id='head' />
       <Head>
         <title>Bukunmi Olufemi</title>
         <meta name="description" content="Olubukunmi Olufemi's Portfolio" />

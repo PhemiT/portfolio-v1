@@ -40,6 +40,8 @@ html {
 
 body {
     background-color: $clr-bg;
+    background-image: url('../assets/grain.svg');
+    background-size: cover;
     color: $clr-grey
 }
 
@@ -49,7 +51,6 @@ body {
 }
 
 .display-none{ display: none !important;}
-.position-static{position: static;}
 
 .heading {
     h3 {
@@ -73,6 +74,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
+    z-index: 2;
 
     div[class="logo"] {
         h3 {
@@ -121,10 +123,12 @@ body {
     flex-direction: column;
     gap: 10px;
     background-color: $clr-grey;
+    background-image: url('../assets/grain.svg');
     color: $clr-white;
     bottom: 0;
     right: 0;
     padding: 25px;
+    z-index: 1;
 
     a {
         text-transform: uppercase;
@@ -133,7 +137,9 @@ body {
         transition: $hvr-transition;
 
         &:hover {
-            color: purple;
+            color: #BCD979;
+            -webkit-animation: wobble-hor-bottom 0.8s both;
+	        animation: wobble-hor-bottom 0.8s both;
         }
     }
 }

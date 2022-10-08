@@ -10,7 +10,6 @@ const Nav = () => {
     const changeStyle = scrollPosition > 200
     const toggleMenu = () => {
         setMenuActive(!menuActive)
-        console.log(menuActive)
     }
 
    
@@ -21,7 +20,7 @@ const Nav = () => {
             </div>
             <div className="links">
                <span className="menu-btn" onClick={toggleMenu} >
-                    <Icon icon={ICONS.menu} />
+                    {menuActive ? <Icon icon={ICONS.close} /> : <Icon icon={ICONS.menu} />}
                 </span>
             </div>
             

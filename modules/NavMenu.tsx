@@ -1,11 +1,9 @@
-import React, { useState } from 'react'
-import ICONS from '../constants/ICONS';
-import Icon from '../components/Icon';
+import React, { useEffect, useState } from 'react'
 import { useContext } from 'react';
 import { NavContext } from '../helpers/NavContext';
 
 const linkItems: {label:string; key: string}[] = [
-    {label: "Home", key: "#home"},
+    {label: "Home", key: "#head"},
     {label: "About", key: "#about"},
     {label:"Work", key: "#work"},
     {label: "Contact", key: "#contact"}
@@ -13,13 +11,22 @@ const linkItems: {label:string; key: string}[] = [
 
 const NavMenu = () => {
     const {menuActive} = useContext(NavContext)
-    const [hoverTrue, setHoverTrue] = useState(false)
+    const [menuToggled, setMenuToggled] = useState(false)
+
+    useEffect(() => {
+      menuActive ? setMenuToggled(true) : null
+    }, [menuActive])
 
   return (
-    <div className={`nav-menu ${menuActive ? 'bounce-in-bottom' : 'roll-out-left'} `}>
+    <div className={`nav-menu ${menuToggled === true ? '' : 'display-none'} ${menuActive ? 'nav-menu bounce-in-bottom' : `bounce-out-top`} `}>
                 {linkItems.map((item) => {
                     return (
-                        <a href={item.key} className={`${hoverTrue ? 'wobble-hor-bottom' : ''}`} >{item.label}</a>
+                        <a 
+                        key={item.key}
+                        href={item.key} 
+                        >
+                          {item.label}
+                        </a>
                     )
                 })}
     </div>

@@ -151,7 +151,7 @@ body {
 .scrolled {
     position: sticky;
     top: 20px;
-    background-color: rgba(138, 168, 161, 0.8);
+    background-color: rgba(164, 149, 137, 0.8);
     background-image: url('../assets/grain.svg');
     background-size: cover;
     border: 1.5px solid $clr-grey;
@@ -206,23 +206,32 @@ body {
 
     h1 {
         font-family: $ff-heading;
-        font-size: 9.8vw;
+        font-size: 9.2vw;
         line-height: 9.9vw;
         max-width: 100%;
         font-weight: 800;
         text-transform: uppercase;
         text-align: center;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        display: inline;
+
+        br {
+            display: none;
+        }
     }
 
     p {
-        font-family: $ff-style;
         font-size: 20px;
-        font-weight: 300;
+        line-height: 24px;
+        font-weight: 400;
         text-align: center;
         max-width: 100%;
+        padding-top: 15px;
+
+        span[class="highlight"] {
+            background-color: #BCD979;
+            font-family: $ff-style;
+            font-size: 14px;
+        }
     }
 }
 /****************//****************/
@@ -298,7 +307,10 @@ body {
     justify-content: center;
     align-items: center;
     padding-bottom: 80px;
-    gap: 15px;
+
+    h3 {
+        padding-bottom: 25px;
+    }
 
     h1 {
         text-transform: capitalize;
@@ -309,9 +321,10 @@ body {
     }
 
     p {
-        width: 40%;
+        width: 100%;
         text-align: center;
         font-weight: 600;
+        padding-bottom: 20px;
     }
 
     button {
@@ -321,10 +334,18 @@ body {
         width: 100px;
         height: 40px;
         font-size: 15px;
+        font-weight: 500;
         background-color: $clr-grey;
         color: $clr-bg;
-        border: 0.5px solid transparent;
+        border: 1.5px solid transparent;
         cursor: pointer;
+        transition: $hvr-transition;
+
+        &:hover {
+            color: $clr-grey;
+            background: transparent;
+            border: 1.5px solid $clr-grey;
+        }
     }
 }
 /****************//****************/
@@ -366,8 +387,14 @@ body {
         padding-block: 10px 50px;
 
         h1 {
-            font-size: 10vw;
+            font-size: 9.5vw;
             line-height: 10.1vw;
+        }
+
+        p {
+            padding-top: 15px;
+            font-size: 18px;
+            line-height: 28px;
         }
     } 
 
@@ -383,5 +410,9 @@ body {
 
     .folio-contact {
         padding-bottom: 50px;
+
+        p {
+            width: 70%;
+        }
     }
 }

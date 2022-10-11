@@ -11,7 +11,7 @@ const Footer = () => {
     return (
         <div className="folio-footer mg-container">
             <div className="attribution">
-                <a href="https://github.com/PhemiT/portfolio-v1">Designed & Built by Bukunmi</a>
+                <a href="https://github.com/PhemiT">Designed & Built by Bukunmi</a>
             </div>
             <div className="socials">
                 {socialLinks.map((link) => {

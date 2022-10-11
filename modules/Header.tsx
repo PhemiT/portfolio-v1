@@ -1,8 +1,8 @@
 const Header = () => {
     return (
-        <div className="folio-header mg-container">
-            <h1 className="gradient-text">front- <br /> end <br /> engineer</h1>
-            <p>Translating intriguing design into real world experiences</p>
+        <div className="folio-header">
+            <h1 className="gradient-text">front- <br /> end <br /> developer</h1>
+            <p>Building <span className="highlight">Efficient</span>, <span className="highlight">Scalable</span> and <span className="highlight">User-Friendly</span> Frontend Web Infrastructures.</p>
         </div>
     ) 
 }

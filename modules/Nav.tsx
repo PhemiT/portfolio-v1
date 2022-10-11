@@ -1,4 +1,4 @@
-import { useContext, useState } from "react"
+import { useContext } from "react"
 import { NavContext } from "../helpers/NavContext"
 import Icon from "../components/Icon"
 import ICONS from "../constants/ICONS"
@@ -16,7 +16,9 @@ const Nav = () => {
     return (
         <div className={`folio-nav mg-container ${changeStyle ? 'scrolled slide-in-top' : ''} ${menuActive ? 'position-static' : ''}`}>
             <div className="logo">
-                <h3>{/* <Icon icon={ICONS.codelogo} size={25} color="#333332" /> */} O.O.</h3>
+                <a href="/">
+                    <h3>O.O.</h3>
+                </a>
             </div>
             <div className="links">
                <span className="menu-btn" onClick={toggleMenu} >

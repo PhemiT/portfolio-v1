@@ -24,6 +24,7 @@ const NavMenu = () => {
                         <a 
                         key={item.key}
                         href={item.key} 
+                        className='gradient-text'
                         >
                           {item.label}
                         </a>

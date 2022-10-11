@@ -66,6 +66,57 @@ body {
     font-weight: 500;
  }
 
+ .gradient-text {
+    color: transparent;
+    background: conic-gradient(
+      #BCD979 12%, 
+      #246A73 12%, #246A73 33%, 
+      #368F8B 33%, #368F8B 55%, 
+      #F3DFC1 55%, #F3DFC1 70%, 
+      #8AA8A1 70%, #8AA8A1 87%, 
+      #F7D1BA 87%);
+    background-size: 50%;
+    background-clip: text;  
+    -webkit-background-clip: text;
+    animation: expand-rev 0.5s ease forwards;
+    cursor: pointer;
+  }
+  
+  .gradient-text:hover {
+    animation: expand 0.5s ease forwards;
+  }
+  
+  @keyframes expand {
+    0% {
+      background-size: 50%;
+      background-position: 0 0;
+    }
+    20% {
+      background-size: 55%;
+      background-position: 0 1em;
+    }
+    100% {
+      background-size: 325%;
+      background-position: -10em -4em;
+    }
+  }
+  
+  @keyframes expand-rev {
+    0% {
+      background-size: 325%;
+      background-position: -10em -4em;
+    }
+    20% {
+      background-size: 55%;
+      background-position: 0 1em;
+    }
+    100% {
+      background-size: 50%;
+      background-position: 0 0;
+    }
+  }
+ 
+
 /****************//****************/
 /* NAVBAR */
 /****************//****************/
@@ -100,7 +151,9 @@ body {
 .scrolled {
     position: sticky;
     top: 20px;
-    background-color: rgb(243, 243, 255, 0.8);
+    background-color: rgba(138, 168, 161, 0.8);
+    background-image: url('../assets/grain.svg');
+    background-size: cover;
     border: 1.5px solid $clr-grey;
     padding: 25px;
 }
@@ -135,12 +188,6 @@ body {
         font-family: $ff-heading;
         font-weight: 800;
         transition: $hvr-transition;
-
-        &:hover {
-            color: #BCD979;
-            -webkit-animation: wobble-hor-bottom 0.8s both;
-	        animation: wobble-hor-bottom 0.8s both;
-        }
     }
 }
 /****************//****************/
@@ -160,7 +207,7 @@ body {
     h1 {
         font-family: $ff-heading;
         font-size: 9.8vw;
-        line-height: 9.8vw;
+        line-height: 9.9vw;
         max-width: 100%;
         font-weight: 800;
         text-transform: uppercase;
@@ -171,7 +218,9 @@ body {
     }
 
     p {
+        font-family: $ff-style;
         font-size: 20px;
+        font-weight: 300;
         text-align: center;
         max-width: 100%;
     }
@@ -256,6 +305,7 @@ body {
         font-family: $ff-heading;
         font-weight: 800;
         font-size: 50px;
+        text-align: center;
     }
 
     p {
@@ -299,3 +349,39 @@ body {
 /****************//****************/
 /* END OF FOOTER */
 /****************//****************/
+
+
+/* MEDIA QUERIES */
+
+@media screen and (max-width: 850px) {
+    .nav-menu {
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        width: 215px;
+        height: 215px;
+    }
+
+    .folio-header{
+        padding-block: 10px 50px;
+
+        h1 {
+            font-size: 10vw;
+            line-height: 10.1vw;
+        }
+    } 
+
+    .folio-about {
+        div[class="about-body"] {
+            padding-block: 25px 50px;
+        }
+    }
+
+    .folio-work {
+        padding-bottom: 50px;
+    }
+
+    .folio-contact {
+        padding-bottom: 50px;
+    }
+}

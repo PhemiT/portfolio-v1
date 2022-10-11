@@ -10,12 +10,16 @@ const linkItems: {label:string; key: string}[] = [
 ]
 
 const NavMenu = () => {
-    const {menuActive} = useContext(NavContext)
+    const {menuActive, setMenuActive} = useContext(NavContext)
     const [menuToggled, setMenuToggled] = useState(false)
 
     useEffect(() => {
       menuActive ? setMenuToggled(true) : null
     }, [menuActive])
+
+    const closeOnClick = () => {
+      setMenuActive(false)
+    }
 
   return (
     <div className={`nav-menu ${menuToggled === true ? '' : 'display-none'} ${menuActive ? 'nav-menu bounce-in-bottom' : `bounce-out-top`} `}>
@@ -25,6 +29,7 @@ const NavMenu = () => {
                         key={item.key}
                         href={item.key} 
                         className='gradient-text'
+                        onClick={closeOnClick}
                         >
                           {item.label}
                         </a>

@@ -5,7 +5,7 @@ const About = () => {
                 <h3><span>01.</span> About Me</h3>
             </div>
             <div className="about-body">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum nostrum omnis pariatur dolorum expedita ullam repudiandae cupiditate fuga laboriosam officia, a ab voluptate quasi ad obcaecati distinctio vero amet illo perspiciatis libero animi cumque sit reprehenderit incidunt. Beatae labore iste assumenda deserunt explicabo nobis, dolor nisi reiciendis voluptas quae ipsam, corporis distinctio recusandae velit temporibus debitis earum illum! Sed, nemo!</p>
+                <p>Hi! I'm Bukunmi. I am a frontend software developer, I enjoy translating beautiful designs into code. I have about a year of Industry experience and am focused on finding the most effective approach towards providing extremely efficient, scalable and user-friendly client-side web Infrastructures.</p>
                 <div className="stack heading">
                     <h3>Tech Stack</h3>
                     <p>My choice stack is: NextJS with Typescript and SCSS</p>
@@ -14,7 +14,7 @@ const About = () => {
                     <h4>Styling:</h4>
                     <p>CSS, SCSS, Styled Components, TailwindCSS</p>
                     <h4>Frameworks/Libraries:</h4>
-                    <p>ReactJS, NextJS, Angular, NodeJS, Express</p>
+                    <p>ReactJS, NextJS, Angular</p>
                     <h4>Storages/Databases:</h4>
                     <p>MongoDB, Firestore</p>
                     <h4>No Code Tools:</h4>

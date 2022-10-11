@@ -24,7 +24,7 @@ const Home: NextPage = () => {
     <div className={styles.container}>
       <div id='head' />
       <Head>
-        <title>Bukunmi Olufemi</title>
+        <title>Olubukunmi Olufemi</title>
         <meta name="description" content="Olubukunmi Olufemi's Portfolio" />
         <link rel="icon" href="/favicon.ico" />
       </Head>

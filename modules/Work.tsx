@@ -1,18 +1,77 @@
+import PawsHomeImg from '../assets/paws-home.webp'
+import GibsonHomeImg from '../assets/gibson.webp'
+import DevHomeImg from '../assets/dev-challenges.webp'
+import GptHomeImg from '../assets/gpt-home.webp'
+import Icon from '../components/Icon'
+import ICONS from '../constants/ICONS'
+
 const Work = () => {
     return (
         <>
             <div className="folio-work mg-container heading" id="work">
-                <h3>02. Selected Works</h3>
-            </div>
-            {/* <div className="folio-work-showcase">
-                <div className="work-divider" />
-                <div className="selected-work">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate dolores eos nobis illum quisquam veniam explicabo non debitis doloribus, tempore id facilis nostrum fuga obcaecati animi quos, nemo soluta qui repellendus? Molestias, recusandae error itaque dolores ratione ea minima pariatur consequuntur doloribus accusamus alias architecto quod ab aut et excepturi quia, nemo soluta aliquid adipisci maxime aliquam? Distinctio necessitatibus nesciunt eligendi aspernatur dignissimos consequatur voluptas, officia ipsam. Accusantium velit impedit doloribus quasi, sed ratione adipisci nostrum beatae! Asperiores consequuntur ducimus sequi commodi hic optio eaque illum eius ut magni veniam, natus eos saepe corporis? Vero minus cum alias doloremque vitae.</p>
-                    <button>Live</button>
-                    <button>Repo</button>
+                <h3>02. Selected Projects</h3>
+                <div className="selected-works">
+                    {/* <div className="work">
+                        <img src={PawsHomeImg.src} alt="Paws project" />
+                        <div className="work-info">
+                            <h3>Paws pet gallery</h3>
+                        </div>
+                    </div>
+                    <div className="work">
+                        <img src={GptHomeImg.src} alt="Paws project" />
+                        <div className="work-info">
+                            <h3>Gpt OpenAI site</h3>
+                        </div>
+                    </div>
+                    <div className="work">
+                        <img src={GibsonHomeImg.src} alt="Paws project" />
+                        <div className="work-info">
+                            <h3>Gibson Concept Website</h3>
+                        </div>
+                    </div>
+                    <div className="work">
+                        <img src={DevHomeImg.src} alt="Paws project" />
+                        <div className="work-info">
+                            <h3>Dev Challenges</h3>
+                        </div>
+                    </div> */}
+                    <div className="gradient-divider" />
+                    <div className="work">
+                        <h1>PAWS PET GALLERY</h1>
+                        <div className="info">
+                            <span>Repo <Icon icon='' /></span>
+                            <span>Live <Icon icon='' /></span>
+                        </div>
+                    </div>
+                    <div className="gradient-divider" />
+                    <div className="work">
+                        <h1>GPT-OPENAI </h1>
+                        <div className="info">
+                            <span>Repo <Icon icon='' /></span>
+                            <span>Live <Icon icon='' /></span>
+                        </div>
+                    </div>
+                    <div className="gradient-divider" />
+                    <div className="work">
+                        <h1>DEV CHALLENGES</h1>
+                        <div className="info">
+                            <span>Repo <Icon icon='' /></span>
+                            <span>Live <Icon icon='' /></span>
+                        </div>
+                    </div>
+                    <div className="gradient-divider" /> 
+                    <div className="work">
+                        <h1>GIBSON CONCEPT WEBSITE</h1>
+                        <div className="info">
+                            <span>Repo <Icon icon='' /></span>
+                            <span>Live <Icon icon='' /></span>
+                        </div>
+                    </div>
+                    <div className="gradient-divider" /> 
+
+
                 </div>
-                <div className="work-divider" />
-            </div> */}
+            </div>
         </>
     )
 }

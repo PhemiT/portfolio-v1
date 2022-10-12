@@ -224,14 +224,12 @@ body {
         font-weight: 400;
         text-align: center;
         max-width: 100%;
-        padding-top: 15px;
+        margin-top: 15px;
+        padding-inline: 20px;
 
         span[class="highlight"] {
             background-color: #BCD979;
-            font-family: $ff-style;
-            font-size: 14px;
             padding-inline: 3px;
-            /* cursor: pointer; */
             transition: $hvr-transition;
         }
 

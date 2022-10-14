@@ -11,66 +11,66 @@ const Work = () => {
             <div className="folio-work mg-container heading" id="work">
                 <h3>02. Selected Projects</h3>
                 <div className="selected-works">
-                    {/* <div className="work">
-                        <img src={PawsHomeImg.src} alt="Paws project" />
-                        <div className="work-info">
-                            <h3>Paws pet gallery</h3>
-                        </div>
-                    </div>
                     <div className="work">
-                        <img src={GptHomeImg.src} alt="Paws project" />
-                        <div className="work-info">
-                            <h3>Gpt OpenAI site</h3>
-                        </div>
-                    </div>
-                    <div className="work">
-                        <img src={GibsonHomeImg.src} alt="Paws project" />
-                        <div className="work-info">
-                            <h3>Gibson Concept Website</h3>
-                        </div>
-                    </div>
-                    <div className="work">
-                        <img src={DevHomeImg.src} alt="Paws project" />
-                        <div className="work-info">
-                            <h3>Dev Challenges</h3>
-                        </div>
-                    </div> */}
-                    <div className="gradient-divider" />
-                    <div className="work">
-                        <h1>PAWS PET GALLERY</h1>
+                        <h3>PAWS PET GALLERY</h3>
                         <div className="info">
-                            <span>Repo <Icon icon='' /></span>
-                            <span>Live <Icon icon='' /></span>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam, deleniti.</p>
+                            <div className="links">
+                                <a href="https://github.com/PhemiT" target="_blank" rel="noopener noreferrer">
+                                    <span><Icon icon={ICONS.repo} color='#DDBEA8' size={15} />Repo</span>
+                                </a>
+                                <a href="https://github.com/PhemiT" target="_blank" rel="noopener noreferrer">
+                                    <span><Icon icon={ICONS.live} color='#DDBEA8' size={15} />Live</span>
+                                </a>
+                            </div>
                         </div>
                     </div>
-                    <div className="gradient-divider" />
                     <div className="work">
-                        <h1>GPT-OPENAI </h1>
+                        <h3>GPT-OPENAI </h3>
                         <div className="info">
-                            <span>Repo <Icon icon='' /></span>
-                            <span>Live <Icon icon='' /></span>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam, deleniti.</p>
+                            <div className="links">
+                                <a href="https://github.com/PhemiT" target="_blank" rel="noopener noreferrer">
+                                    <span><Icon icon={ICONS.repo} color='#DDBEA8' size={15} />Repo</span>
+                                </a>
+                                <a href="https://github.com/PhemiT" target="_blank" rel="noopener noreferrer">
+                                    <span><Icon icon={ICONS.live} color='#DDBEA8' size={15} />Live</span>
+                                </a>
+                            </div>
                         </div>
                     </div>
-                    <div className="gradient-divider" />
                     <div className="work">
-                        <h1>DEV CHALLENGES</h1>
+                        <h3>DEV CHALLENGES</h3>
                         <div className="info">
-                            <span>Repo <Icon icon='' /></span>
-                            <span>Live <Icon icon='' /></span>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam, deleniti.</p>
+                            <div className="links">
+                                <a href="https://github.com/PhemiT" target="_blank" rel="noopener noreferrer">
+                                    <span><Icon icon={ICONS.repo} color='#DDBEA8' size={15} />Repo</span>
+                                </a>
+                                <a href="https://github.com/PhemiT" target="_blank" rel="noopener noreferrer">
+                                    <span><Icon icon={ICONS.live} color='#DDBEA8' size={15} />Live</span>
+                                </a>
+                            </div>
                         </div>
                     </div>
-                    <div className="gradient-divider" /> 
                     <div className="work">
-                        <h1>GIBSON CONCEPT WEBSITE</h1>
+                        <h3>GIBSON CONCEPT WEBSITE</h3>
                         <div className="info">
-                            <span>Repo <Icon icon='' /></span>
-                            <span>Live <Icon icon='' /></span>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam, deleniti.</p>
+                            <div className="links">
+                                <a href="https://github.com/PhemiT" target="_blank" rel="noopener noreferrer">
+                                    <span><Icon icon={ICONS.repo} color='#DDBEA8' size={15} />Repo</span>
+                                </a>
+                                <a href="https://github.com/PhemiT" target="_blank" rel="noopener noreferrer">
+                                    <span><Icon icon={ICONS.live} color='#DDBEA8' size={15} />Live</span>
+                                </a>
+                            </div>
                         </div>
                     </div>
-                    <div className="gradient-divider" /> 
-
-
                 </div>
+                    <div className="works-cta">
+                        <button>see more</button>
+                    </div>
             </div>
         </>
     )

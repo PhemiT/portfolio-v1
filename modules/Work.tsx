@@ -1,7 +1,3 @@
-import PawsHomeImg from '../assets/paws-home.webp'
-import GibsonHomeImg from '../assets/gibson.webp'
-import DevHomeImg from '../assets/dev-challenges.webp'
-import GptHomeImg from '../assets/gpt-home.webp'
 import Icon from '../components/Icon'
 import ICONS from '../constants/ICONS'
 

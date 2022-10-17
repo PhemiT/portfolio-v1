@@ -57,9 +57,9 @@ const Work = () => {
                                 <a href="https://github.com/PhemiT/twitter-clone-next-js" target="_blank" rel="noopener noreferrer">
                                     <span><Icon icon={ICONS.repo} color='#DDBEA8' size={15} />Repo</span>
                                 </a>
-                                {/* <a href="https://github.com/PhemiT" target="_blank" rel="noopener noreferrer">
+                                <a href="https://twitter-clone-phemi-t.vercel.app/" target="_blank" rel="noopener noreferrer">
                                     <span><Icon icon={ICONS.live} color='#DDBEA8' size={15} />Live</span>
-                                </a> */}
+                                </a>
                             </div>
                         </div>
                     </div>

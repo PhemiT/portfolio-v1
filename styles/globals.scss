@@ -318,9 +318,7 @@ button {
             box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
             color: $clr-bg;
             width: 100%;
-            /* height: 400px; */
             padding: 20px;
-            cursor: pointer;
             transition: all 200ms ease;
 
             h3 {
@@ -353,7 +351,7 @@ button {
                 }
             }
 
-            &:hover {
+            /* &:hover {
                 background-color: rgba(221, 190, 168, 0.9);
                 background-size: cover;
             }
@@ -372,7 +370,7 @@ button {
 
             &:nth-child(4):hover {
                 background-image: url('../assets/gibson.webp');
-            }
+            } */
         }
 
         

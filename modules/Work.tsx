@@ -14,26 +14,26 @@ const Work = () => {
                     <div className="work">
                         <h3>PAWS PET GALLERY</h3>
                         <div className="info">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam, deleniti.</p>
+                            <p>Pet gallery web app for posting and viewing pet moments. Built using Next.js with Typescript, SCSS and MongoDB.</p>
                             <div className="links">
-                                <a href="https://github.com/PhemiT" target="_blank" rel="noopener noreferrer">
+                                <a href="https://github.com/PhemiT/Paws" target="_blank" rel="noopener noreferrer">
                                     <span><Icon icon={ICONS.repo} color='#DDBEA8' size={15} />Repo</span>
                                 </a>
-                                <a href="https://github.com/PhemiT" target="_blank" rel="noopener noreferrer">
+                                <a href="https://paws-app.vercel.app/" target="_blank" rel="noopener noreferrer">
                                     <span><Icon icon={ICONS.live} color='#DDBEA8' size={15} />Live</span>
                                 </a>
                             </div>
                         </div>
                     </div>
                     <div className="work">
-                        <h3>GPT-OPENAI </h3>
+                        <h3>GPT3-OPENAI WEBSITE</h3>
                         <div className="info">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam, deleniti.</p>
+                            <p>Pixel perfect replication of OPENAI landing page from Figma File. BUilt with React.js and CSS</p>
                             <div className="links">
-                                <a href="https://github.com/PhemiT" target="_blank" rel="noopener noreferrer">
+                                <a href="https://github.com/PhemiT/gpt3-openai-site" target="_blank" rel="noopener noreferrer">
                                     <span><Icon icon={ICONS.repo} color='#DDBEA8' size={15} />Repo</span>
                                 </a>
-                                <a href="https://github.com/PhemiT" target="_blank" rel="noopener noreferrer">
+                                <a href="https://gpt3-openai-pt.vercel.app/" target="_blank" rel="noopener noreferrer">
                                     <span><Icon icon={ICONS.live} color='#DDBEA8' size={15} />Live</span>
                                 </a>
                             </div>
@@ -42,34 +42,36 @@ const Work = () => {
                     <div className="work">
                         <h3>DEV CHALLENGES</h3>
                         <div className="info">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam, deleniti.</p>
+                            <p>Index of minor projects I continously take to maintain, improve and/or learn new technologies.</p>
                             <div className="links">
-                                <a href="https://github.com/PhemiT" target="_blank" rel="noopener noreferrer">
+                                <a href="https://github.com/PhemiT/Dev-Challenges" target="_blank" rel="noopener noreferrer">
                                     <span><Icon icon={ICONS.repo} color='#DDBEA8' size={15} />Repo</span>
                                 </a>
-                                <a href="https://github.com/PhemiT" target="_blank" rel="noopener noreferrer">
+                                <a href="https://dev-challenges-phemit.vercel.app/" target="_blank" rel="noopener noreferrer">
                                     <span><Icon icon={ICONS.live} color='#DDBEA8' size={15} />Live</span>
                                 </a>
                             </div>
                         </div>
                     </div>
                     <div className="work">
-                        <h3>GIBSON CONCEPT WEBSITE</h3>
+                        <h3>TWITTER CLONE</h3>
                         <div className="info">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam, deleniti.</p>
+                            <p>Clone of Twitter web app with Like, Post, Delete and Comment Features. Built with Next.js, CSS, Firebase and Recoil</p>
                             <div className="links">
-                                <a href="https://github.com/PhemiT" target="_blank" rel="noopener noreferrer">
+                                <a href="https://github.com/PhemiT/twitter-clone-next-js" target="_blank" rel="noopener noreferrer">
                                     <span><Icon icon={ICONS.repo} color='#DDBEA8' size={15} />Repo</span>
                                 </a>
-                                <a href="https://github.com/PhemiT" target="_blank" rel="noopener noreferrer">
+                                {/* <a href="https://github.com/PhemiT" target="_blank" rel="noopener noreferrer">
                                     <span><Icon icon={ICONS.live} color='#DDBEA8' size={15} />Live</span>
-                                </a>
+                                </a> */}
                             </div>
                         </div>
                     </div>
                 </div>
                     <div className="works-cta">
-                        <button>see more</button>
+                        <a href="https://github.com/PhemiT?tab=repositories" target="_blank" rel="noopener noreferrer">
+                            <button>see more</button>
+                        </a>
                     </div>
             </div>
         </>

@@ -121,26 +121,6 @@ button {
       background-position: 0 0;
     }
   }
-
-  .gradient-divider {
-    background: conic-gradient(
-      #BCD979 12%, 
-      #246A73 12%, #246A73 33%, 
-      #368F8B 33%, #368F8B 55%, 
-      #F3DFC1 55%, #F3DFC1 70%, 
-      #8AA8A1 70%, #8AA8A1 87%, 
-      #F7D1BA 87%);
-    background-size: 50%;
-    animation: expand-rev 0.5s ease forwards;
-  }
-  
-  .gradient-divider:hover {
-    animation: expand 0.5s ease forwards;
-  }
-
-  
- 
-
 /****************//****************/
 /* NAVBAR */
 /****************//****************/
@@ -341,7 +321,7 @@ button {
             /* height: 400px; */
             padding: 20px;
             cursor: pointer;
-            transition: $hvr-transition;
+            transition: all 200ms ease;
 
             h3 {
                font-family: $ff-heading;

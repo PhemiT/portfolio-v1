@@ -14,7 +14,7 @@ const About = () => {
                     <h4>Styling:</h4>
                     <p>CSS, SCSS, Styled Components, TailwindCSS</p>
                     <h4>Frameworks/Libraries:</h4>
-                    <p>ReactJS, NextJS, Angular</p>
+                    <p>ReactJS, NextJS, Angular, ExpressJS</p>
                     <h4>Storages/Databases:</h4>
                     <p>MongoDB, Firestore</p>
                     <h4>No Code Tools:</h4>

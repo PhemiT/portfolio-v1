@@ -5,6 +5,7 @@ import ICONS from '../constants/ICONS'
 import styles from '../styles/Home.module.scss'
 import {
     Nav,
+    NavMenu,
     Header,
     Work,
     Contact,
@@ -13,7 +14,6 @@ import {
 } from "../modules"
 import { NavContext } from '../helpers/NavContext'
 import { useState } from 'react'
-import NavMenu from '../modules/NavMenu'
 
 const favicon = <Icon icon={ICONS.codelogo} />
 

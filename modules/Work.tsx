@@ -24,7 +24,7 @@ const Work = () => {
                     <div className="work">
                         <h3>GPT3-OPENAI WEBSITE</h3>
                         <div className="info">
-                            <p>Pixel perfect replication of OPENAI landing page from Figma File. BUilt with React.js and CSS</p>
+                            <p>Pixel perfect replication of OPENAI landing page from Figma File. Built with React.js and CSS</p>
                             <div className="links">
                                 <a href="https://github.com/PhemiT/gpt3-openai-site" target="_blank" rel="noopener noreferrer">
                                     <span><Icon icon={ICONS.repo} color='#DDBEA8' size={15} />Repo</span>

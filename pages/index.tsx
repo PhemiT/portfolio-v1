@@ -1,8 +1,5 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
-import Icon from '../components/Icon'
-import ICONS from '../constants/ICONS'
-import styles from '../styles/Home.module.scss'
 import {
     Nav,
     NavMenu,
@@ -15,13 +12,11 @@ import {
 import { NavContext } from '../helpers/NavContext'
 import { useState } from 'react'
 
-const favicon = <Icon icon={ICONS.codelogo} />
-
 const Home: NextPage = () => {
   const [menuActive, setMenuActive] = useState(false)
 
   return (
-    <div className={styles.container}>
+    <div>
       <div id='head' />
       <Head>
         <title>Olubukunmi Olufemi</title>

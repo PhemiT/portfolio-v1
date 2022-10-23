@@ -21,7 +21,6 @@ const About = () => {
                     <p>WordPress, WebFlow</p>
                     <h4>Other tools:</h4>
                     <p>Git/GitHub, Figma, AdobeXD</p>
-
                 </div>
             </div>
         </div>

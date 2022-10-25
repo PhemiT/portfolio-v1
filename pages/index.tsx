@@ -9,13 +9,22 @@ import {
     Footer,
     About
 } from "../modules"
+import Loading from '../components/Loading'
 import { NavContext } from '../helpers/NavContext'
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
+import { setTimeout } from 'timers'
 
 const Home: NextPage = () => {
   const [menuActive, setMenuActive] = useState(false)
+ /*  const [loading, setLoading] = useState(true)
+  useEffect(() => {
+    setTimeout(() => {
+      setLoading(false)
+    }, 4000)
+  }, [])
 
-  return (
+  if (loading) {return (<Loading />)} */
+  return ( 
     <div>
       <div id='head' />
       <Head>

@@ -474,6 +474,11 @@ button {
     height: 100vh;
     background-color: $clr-grey;
     background-image: $bg-image;
+
+    h1 {
+        color: white;
+        font-family: $ff-heading;
+    }
 }
 /****************//****************/
 /* END OF LOADING */

@@ -7,7 +7,7 @@ const About = () => {
             <div className="about-body">
                 <p>Hi! I'm Bukunmi. I am a frontend software developer. I enjoy translating beautiful designs into code. I have about a year of industry experience and am focused on finding the most effective approach towards providing extremely efficient, scalable, and user-friendly client-side web infrastructures.</p>
                 <div className="stack heading">
-                    <h3>Tech Stack</h3>
+                    <h3>Tools I Use</h3>
                     <p>My choice stack is: NextJS with Typescript + SCSS</p>
                     <h4>Languages:</h4>
                     <p>JavaScript/Typescript, Python</p>

@@ -1,4 +1,4 @@
-export default () => {
+const Player = () => {
     return (
         <>
             <div>
@@ -7,4 +7,6 @@ export default () => {
         </>
     )
 }
+
+export default Player
 

@@ -38,7 +38,7 @@ const Work = () => {
                     <div className="work">
                         <h3>DEV CHALLENGES</h3>
                         <div className="info">
-                            <p>Index of minor projects I continously take to maintain, improve and/or learn new technologies.</p>
+                            <p>Index of minor projects I continously do to maintain, improve and/or learn new technologies.</p>
                             <div className="links">
                                 <a href="https://github.com/PhemiT/Dev-Challenges" target="_blank" rel="noopener noreferrer">
                                     <span><Icon icon={ICONS.repo} color='#DDBEA8' size={15} />Repo</span>

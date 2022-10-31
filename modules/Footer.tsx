@@ -2,9 +2,9 @@ import Icon from "../components/Icon"
 import ICONS from "../constants/ICONS"
 
 const socialLinks = [
-    {link: "mailto:phemiwrites@gmail.com" , icon: `${ICONS.mail}`},
-    {link: "https://github.com/PhemiT" , icon: `${ICONS.github}`},
-    {link: "https://www.linkedin.com/in/olubukunmi-olufemi-b7013122b" , icon: `${ICONS.linkedin}`}
+    {link: "mailto:phemiwrites@gmail.com" , icon: ICONS.mail},
+    {link: "https://github.com/PhemiT" , icon: ICONS.github},
+    {link: "https://www.linkedin.com/in/olubukunmi-olufemi-b7013122b" , icon: ICONS.linkedin}
 ]
  
 const Footer = () => {

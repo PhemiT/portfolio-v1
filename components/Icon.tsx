@@ -2,13 +2,13 @@ import React from "react"
 
 interface IconProps {
     color?: string,
-    icon: string,
+    icon: Array<string>,
     size?: number
 }
 
 const defaultProps = {
     color: "#000",
-    icon: "",
+    icon: [""],
     size: 20
 }
 
@@ -30,12 +30,24 @@ const Icon: React.FC<IconProps> = (props: IconProps) => {
             height={`${props.size}px`}
             viewBox="0 0 1024 1024"
         >
+            {Array.isArray(props.icon) ? props.icon.map((pathD) => {
+                return (
+                <path
+                style={styles.path}
+                d={pathD}
+                ></path>
+                )
+            }): 
+                null
+            }
+            {/* <path
+                style={styles.path}
+                d={props.icon}
+            ></path>
             <path
                 style={styles.path}
                 d={props.icon}
-            >
-
-            </path>
+            ></path> */}
 
         </svg>
     )

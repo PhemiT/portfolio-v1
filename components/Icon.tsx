@@ -35,6 +35,7 @@ const Icon: React.FC<IconProps> = (props: IconProps) => {
                 <path
                 style={styles.path}
                 d={pathD}
+                key={pathD}
                 ></path>
                 )
             }): 

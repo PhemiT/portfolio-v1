@@ -22,7 +22,7 @@ const Nav = () => {
             </div>
             <div className="links">
                <span className="menu-btn" onClick={toggleMenu} >
-                    {menuActive ? <Icon icon={ICONS.close} /> : <Icon icon={ICONS.menu} />}
+                    {menuActive ? <Icon icon={ICONS.caretup} /> : <Icon icon={ICONS.caretdown} />}
                 </span>
             </div>
             

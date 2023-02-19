@@ -5,10 +5,10 @@ const About = () => {
                 <h3><span>01.</span> About Me</h3>
             </div>
             <div className="about-body">
-                <p>Hi! I'm Bukunmi. I am a frontend software developer. I enjoy translating beautiful designs into code. I have about a year of industry experience and am focused on finding the most effective approach towards providing extremely efficient, scalable, and user-friendly client-side web infrastructures.</p>
+                <p>Hey there! I'm Bukunmi, and I live and breathe web development as a full-stack software developer. I thrive on the challenge of transforming stunning designs into real-life, functioning websites and crafting the robust logic that powers them. I have about a year of experience and am laser-focused on delivering high-performing, scalable, and intuitive web infrastructures.</p>
                 <div className="stack heading">
                     <h3>Tools I Use</h3>
-                    <p>My choice stack is: NextJS with Typescript + SCSS</p>
+                    <p>My choice stack is: NextJS with Typescript and SCSS</p>
                     <h4>Languages:</h4>
                     <p>JavaScript/Typescript, Python</p>
                     <h4>Styling:</h4>

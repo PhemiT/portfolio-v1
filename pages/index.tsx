@@ -9,11 +9,9 @@ import {
     Footer,
     About
 } from "../modules"
-import Loading from '../components/Loading'
 import { NavContext } from '../helpers/NavContext'
 import { useEffect, useState } from 'react'
 import { setTimeout } from 'timers'
-import dbConnect from '../lib/dbConnect'
 
 const Home: NextPage = () => {
   const [menuActive, setMenuActive] = useState(false)

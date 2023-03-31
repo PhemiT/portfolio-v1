@@ -63,6 +63,17 @@ const Work = () => {
                             </div>
                         </div>
                     </div>
+                    <div className="work">
+                        <h3>RIGHTMUUVE<sup>{`{under development}`}</sup></h3>
+                        <div className="info">
+                            <p>Wordpress website built for a logistics service utilising automated bookings.</p>
+                            <div className="links">
+                                <a href="https://rightmuuve.com/" target="_blank" rel="noopener noreferrer">
+                                    <span><Icon icon={ICONS.live} color='#DDBEA8' size={15} />Live</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
                     <div className="works-cta">
                         <a href="https://github.com/PhemiT?tab=repositories" target="_blank" rel="noopener noreferrer">

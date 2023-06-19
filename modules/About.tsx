@@ -10,17 +10,17 @@ const About = () => {
                     <h3>Tools I Use</h3>
                     <p>My choice stack is: NextJS with Typescript and SCSS</p>
                     <h4>Languages:</h4>
-                    <p>JavaScript/Typescript, Python</p>
+                    <p>C#, JavaScript/Typescript, Python</p>
                     <h4>Styling:</h4>
                     <p>CSS, SCSS, Styled Components, TailwindCSS</p>
                     <h4>Frameworks/Libraries:</h4>
-                    <p>ReactJS, NextJS, Angular, ExpressJS</p>
+                    <p>ReactJS, NextJS, ASP.NET, Angular, ExpressJS</p>
                     <h4>Storages/Databases:</h4>
                     <p>MongoDB, Firestore</p>
                     <h4>No Code Tools:</h4>
                     <p>WordPress, WebFlow</p>
                     <h4>Other tools:</h4>
-                    <p>Git/GitHub, Figma, AdobeXD</p>
+                    <p>Azure, Git/GitHub, Figma, AdobeXD</p>
                 </div>
             </div>
         </div>

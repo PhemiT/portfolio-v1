@@ -20,7 +20,7 @@ const About = () => {
                     <h4>No Code Tools:</h4>
                     <p>WordPress, WebFlow</p>
                     <h4>Other tools:</h4>
-                    <p>Azure, Git/GitHub, Figma, AdobeXD</p>
+                    <p>Azure, Git/GitHub</p>
                 </div>
             </div>
         </div>

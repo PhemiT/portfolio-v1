@@ -41,15 +41,6 @@ const Icon: React.FC<IconProps> = (props: IconProps) => {
             }): 
                 null
             }
-            {/* <path
-                style={styles.path}
-                d={props.icon}
-            ></path>
-            <path
-                style={styles.path}
-                d={props.icon}
-            ></path> */}
-
         </svg>
     )
 }

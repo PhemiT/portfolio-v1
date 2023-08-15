@@ -17,9 +17,13 @@ const Modal:React.FC<ModalProps> = ({heading, isOpen, onClose, children}) => {
         <div className="modal_main">
             <div className="modal_heading">
                 <h3>{heading}</h3>
-                <Icon icon={ICONS.close} />
+                <button onClick={onClose}>
+                  <Icon icon={ICONS.close}/>
+                </button>
             </div>
-            {children}
+            <div className="modal_content">
+              {children}
+            </div>
         </div>
     </div>
   )

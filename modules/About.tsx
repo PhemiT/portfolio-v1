@@ -1,3 +1,5 @@
+import Resume from "../components/Resume"
+
 const About = () => {
     return (
         <div className="folio-about mg-container" id="about">
@@ -15,7 +17,7 @@ const About = () => {
                     <h4>Languages:</h4>
                     <p>JavaScript/Typescript, C#</p>
                     <h4>Frameworks/Libraries:</h4>
-                    <p>ReactJS(NextJS), MUI, NodeJS(ExpressJS), GraphQL, ASP.NET</p>
+                    <p>ReactJS(NextJS), MUI, NodeJS(ExpressJS), ASP.NET</p>
                     <h4>Storages/Databases:</h4>
                     <p>MongoDB, Postgres</p>
                     <h4>Styling:</h4>
@@ -23,6 +25,7 @@ const About = () => {
                     <h4>Other tools:</h4>
                     <p>Azure, Git/GitHub</p>
                 </div>
+                <Resume />
             </div>
         </div>
     )

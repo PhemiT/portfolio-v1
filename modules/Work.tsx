@@ -66,7 +66,7 @@ const Work = () => {
                 </div>
                     <div className="works-cta">
                         <a href="https://github.com/PhemiT?tab=repositories" target="_blank" rel="noopener noreferrer">
-                            <button>see more</button>
+                            <button>view more<Icon icon={ICONS.live}/></button>
                         </a>
                     </div>
             </div>

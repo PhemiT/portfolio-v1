@@ -1,9 +1,9 @@
-import React from "react"
+import React from "react";
 
 interface IconProps {
-    color?: string,
-    icon: Array<string>,
-    size?: number
+    color?: string;
+    icon: Array<string>;
+    size?: number;
 }
 
 const defaultProps = {

@@ -311,48 +311,6 @@ button {
         justify-items: flex-start;
         align-items: flex-start;
         gap: 25px;
-
-        .work {
-            background-color: $clr-grey;
-            background-image: $bg-image;
-            box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
-            color: $clr-bg;
-            width: 100%;
-            padding: 20px;
-            transition: all 200ms ease;
-
-            h3 {
-               font-family: $ff-heading;
-               font-weight: 800;
-               padding: 0;
-               padding-block: 10px  20px; 
-            }
-
-            .info {
-                p {
-                    padding-bottom: 20px;
-                }
-
-                span {
-                    font-family: $ff-pixel;
-                    text-transform: uppercase;
-                }
-            }
-
-            .links {
-                display: flex;
-                align-items: center;
-                gap: 13px;
-
-                span {
-                    display: flex;
-                    align-items: center;
-                    gap: 3px;
-                }
-            }
-        }
-
-        
     }
     
     .works-cta {
@@ -376,6 +334,47 @@ button {
             color: $clr-black;
             border: 1.5px solid transparent;
             cursor: pointer;
+        }
+    }
+}
+
+.work {
+    background-color: $clr-grey;
+    background-image: $bg-image;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    color: $clr-bg;
+    width: 100%;
+    padding: 20px;
+    transition: all 200ms ease;
+
+    h3 {
+       font-family: $ff-heading;
+       font-weight: 800;
+       padding: 0;
+       padding-block: 10px  20px; 
+       text-transform: capitalize;
+    }
+
+    .info {
+        p {
+            padding-bottom: 20px;
+        }
+
+        span {
+            font-family: $ff-pixel;
+            text-transform: uppercase;
+        }
+    }
+
+    .links {
+        display: flex;
+        align-items: center;
+        gap: 13px;
+
+        span {
+            display: flex;
+            align-items: center;
+            gap: 3px;
         }
     }
 }

@@ -7,11 +7,11 @@ const Resume = () => {
     const [isModalOpen, setIsModalOpen] = useState<boolean>(false)
   return (
     <div className='resume_main'>
-        <button
+        {/* <button
         onClick={() => setIsModalOpen(true)}>
             view resume
             <Icon icon={ICONS.live}/>
-        </button>
+        </button> */}
         <Modal
         isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} heading={'resume'}>
             <div>

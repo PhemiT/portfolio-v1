@@ -49,11 +49,11 @@ const Work = () => {
                       <WorkAlt 
                     heading='CSR Page'
                     desc={<>
-                        Skim Clone of this <Heyfood /> page
+                        Skim Clone of this <Heyfood /> page.
                     </>}
                     repoLink='https://github.com/PhemiT/test-client'
                     liveLink='https://test-client-alpha.vercel.app/'
-                    tools='ReactJS, NodeJS, MongoDB'
+                    tools='ReactJS(MUI), NodeJS, MongoDB'
                     features={['API Endpoints', 'Client-Side Rendering']}
                      />
                 </div>

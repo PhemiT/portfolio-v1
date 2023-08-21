@@ -25,7 +25,7 @@ const About = () => {
                     <h4>Other tools:</h4>
                     <p>Azure, Git/GitHub</p>
                 </div>
-                <Resume />
+                {/* <Resume /> */}
             </div>
         </div>
     )

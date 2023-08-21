@@ -125,10 +125,10 @@ button {
 /* NAVBAR */
 /****************//****************/
 .folio-nav {
-    padding-block: 30px;
+    padding-block: 40px;
     display: flex;
     justify-content: space-between;
-    align-items: flex-start;
+    align-items: center;
     z-index: 2;
 
     div[class="logo"] {
@@ -207,6 +207,10 @@ body:not(.modal-active) .scrolled {
     justify-content: center;
     align-items: center;
     padding-block: 35px 100px;
+
+    img {
+        width: 10%;
+    }
 
     h1 {
         font-family: $ff-heading;
@@ -483,6 +487,10 @@ body:not(.modal-active) .scrolled {
             align-items: flex-start !important;
         }
     }
+
+    .folio-nav {
+        padding-block: 20px;
+    }
 }
 
 @media screen and (max-width: 850px) {
@@ -500,6 +508,10 @@ body:not(.modal-active) .scrolled {
 
     .folio-header{
         padding-block: 10px 50px;
+        
+        img {
+            width: 25%;
+        }
 
         h1 {
             font-size: 9.5vw;
@@ -508,8 +520,12 @@ body:not(.modal-active) .scrolled {
 
         p {
             padding-top: 15px;
-            font-size: 18px;
+            font-size: 16px;
             line-height: 28px;
+
+            span[class='highlight'] {
+                font-size: 13px;
+            }
         }
     } 
 
@@ -572,7 +588,7 @@ body:not(.modal-active) .scrolled {
 
 .modal_main {
     position: relative;
-    width: 80%;
+    width: 50%;
     border: 2px solid $clr-black;
     max-height: 70vh;
     overflow-y: auto;
@@ -580,6 +596,31 @@ body:not(.modal-active) .scrolled {
     opacity: 0; 
     transition: transform 0.3s ease-out, opacity 0.3s ease-out;
 }
+
+.modal_content {
+    overflow-y: auto;
+    max-height: 50vh;
+}
+.modal_content::-webkit-scrollbar {
+    display: flex;
+    width: 12px; 
+}
+
+.modal_content::-webkit-scrollbar-track {
+    background: transparent; 
+}
+
+.modal_content::-webkit-scrollbar-thumb {
+    background: $clr-grey;  
+    height: 30px;
+    border: 0.2px solid transparent;
+    border-radius: 10px;
+}
+
+/* ::-webkit-scrollbar-thumb:hover {
+    background: #555;  
+} */
+
 
 .modal_overlay.modal-open {
     opacity: 1;
@@ -615,6 +656,12 @@ body:not(.modal-active) .scrolled {
     }
 }
 
+@media screen and (max-width: 1024px) {
+    .modal_main {
+        width: 90%;
+    }
+}
+
 
 /* RESUME BTN */
 .resume_main {
@@ -647,7 +694,7 @@ body:not(.modal-active) .scrolled {
         font-weight: 900;
         font-size: 20px;
         background-image: $bg-image;
-        color: $clr-black;
+        color: $clr-grey;
         border: 1.5px solid transparent;
         cursor: pointer;
     }
@@ -655,5 +702,9 @@ body:not(.modal-active) .scrolled {
 
 .works-cta {
     padding-top: 20px;
+}
+
+.morework {
+    padding-block: 15px;
 }
 

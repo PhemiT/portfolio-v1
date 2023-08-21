@@ -35,7 +35,9 @@ const Modal:React.FC<ModalProps> = ({heading, isOpen, onClose, children}) => {
                   <Icon icon={ICONS.close}/>
                 </button>
             </div>
-            {children}
+            <div className="modal_content">
+              {children}
+            </div>
         </div>
     </div>
   )

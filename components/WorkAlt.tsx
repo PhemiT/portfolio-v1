@@ -1,10 +1,10 @@
-import React from 'react'
+import React, { ReactNode } from 'react'
 import Icon from './Icon'
 import ICONS from '../constants/ICONS'
 
 interface WorkProps  {
     heading: string;
-    desc: string;
+    desc: string | ReactNode;
     tools: string;
     repoLink: string;
     liveLink: string;

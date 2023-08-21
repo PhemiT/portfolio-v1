@@ -3,6 +3,19 @@ import MoreWork from '../components/MoreWork'
 import WorkAlt from '../components/WorkAlt'
 import ICONS from '../constants/ICONS'
 
+const Heyfood = () => {
+    return (
+        <a 
+        href="https://heyfood.africa/stores?src=aggregator"
+        style={{
+            textDecoration: 'underline'
+        }}
+        >
+            heyfood
+        </a>
+    )
+}
+
 const Work = () => {
     return (
         <>
@@ -33,21 +46,23 @@ const Work = () => {
                     tools='NodeJS, EJS, MongoDB'
                     features={['CRUD Operations', 'Authentication & Private Routes', ]}
                      />
-                     <WorkAlt 
-                    heading='domys'
-                    desc='Real estate landing page crafted with meticulous attention to detail.'
-                    repoLink='https://github.com/PhemiT/domys'
-                    liveLink='https://domys.vercel.app/'
-                    tools='ReactJS'
-                    features={['Responsive UI']}
+                      <WorkAlt 
+                    heading='CSR Page'
+                    desc={<>
+                        Skim Clone of this <Heyfood /> page
+                    </>}
+                    repoLink='https://github.com/PhemiT/test-client'
+                    liveLink='https://test-client-alpha.vercel.app/'
+                    tools='ReactJS, NodeJS, MongoDB'
+                    features={['API Endpoints', 'Client-Side Rendering']}
                      />
                 </div>
-                    <div className="works-cta">
+                    {/* <div className="works-cta">
                         <a href="https://github.com/PhemiT?tab=repositories" target="_blank" rel="noopener noreferrer">
                             <button>view more<Icon icon={ICONS.live}/></button>
                         </a>
-                    </div>
-                    {/* <MoreWork /> */}
+                    </div> */}
+                    <MoreWork />
             </div>
         </>
     )

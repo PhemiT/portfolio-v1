@@ -10,19 +10,11 @@ import {
     About
 } from "../modules"
 import { NavContext } from '../helpers/NavContext'
-import { useEffect, useState } from 'react'
-import { setTimeout } from 'timers'
+import { useState } from 'react'
 
 const Home: NextPage = () => {
   const [menuActive, setMenuActive] = useState(false)
- /*  const [loading, setLoading] = useState(true)
-  useEffect(() => {
-    setTimeout(() => {
-      setLoading(false)
-    }, 4000)
-  }, [])
 
-  if (loading) {return (<Loading />)} */
   return ( 
     <div>
       <div id='head' />
@@ -43,11 +35,5 @@ const Home: NextPage = () => {
     </div>
   )
 }
-
-/* export async function getServerSideProps() {
-  await dbConnect()
-
-  return { props : {}}
-} */
 
 export default Home

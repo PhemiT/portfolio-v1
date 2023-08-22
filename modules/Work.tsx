@@ -54,7 +54,7 @@ const Work = () => {
                     repoLink='https://github.com/PhemiT/test-client'
                     liveLink='https://test-client-alpha.vercel.app/'
                     tools='ReactJS(MUI), NodeJS, MongoDB'
-                    features={['API Endpoints', 'Client-Side Rendering']}
+                    features={['API Endpoints', 'Client-Side Rendering', 'Responsive UI']}
                      />
                 </div>
                     {/* <div className="works-cta">

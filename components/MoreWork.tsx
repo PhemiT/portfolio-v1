@@ -20,6 +20,13 @@ const MoreWork = () => {
         onClose={() => setIsModalOpen(false)}
         >
           <ModalWork 
+          heading='Airmed'
+          desc='Ecommerce Website'
+          features='Wordpress - Ecommerce Website'
+          liveLink='https://airmedng.com/'
+          />
+          <Divider />
+          <ModalWork 
           heading='domys'
           desc='landing page'
           features='ReactJS - Responsive UI'

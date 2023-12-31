@@ -35,6 +35,14 @@ const MoreWork = () => {
           />
           <Divider />
           <ModalWork 
+          heading='boldo'
+          desc='landing page'
+          features='HTML, CSS, JS'
+          repoLink='https://github.com/PhemiT/boldo'
+          liveLink='https://boldo-drab.vercel.app/'
+          />
+          <Divider />
+          <ModalWork 
           heading='weather app'
           desc='Reactive UI'
           features='HTML, CSS, JS - Dynamic Data'

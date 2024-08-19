@@ -20,6 +20,14 @@ const MoreWork = () => {
         onClose={() => setIsModalOpen(false)}
         >
           <ModalWork 
+          heading='GPT3 Website'
+          desc='Landing Page UI'
+          features='ReactJS - Respomsive UI'
+          repoLink='https://github.com/PhemiT/gpt3-openai-site'
+          liveLink='https://gpt3-openai-pt.vercel.app/'
+          />
+          <Divider />
+          <ModalWork 
           heading='Airmed'
           desc='Ecommerce Website'
           features='Wordpress - Ecommerce Website'

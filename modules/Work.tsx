@@ -28,15 +28,15 @@ const Work = () => {
                     repoLink='https://github.com/PhemiT/Paws'
                     liveLink='https://paws-app.vercel.app/'
                     tools='NextJS, SCSS, MongoDB'
-                    features={['Responsive UI','Server-Side Rendering', 'Integrated Data Operations']}
+                    features={['Responsive UI','Server-Side Rendering', 'Attractive Slider']}
                      />
                      <WorkAlt 
-                    heading='GPT-3 openai website'
-                    desc='Pixel perfect replication of OPENAI landing page from Figma File.'
-                    repoLink='https://github.com/PhemiT/gpt3-openai-site'
-                    liveLink='https://gpt3-openai-pt.vercel.app/'
-                    tools='ReactJS'
-                    features={['Responsive UI']}
+                    heading='NJEM'
+                    desc='Travel Agency Website'
+                    repoLink='https://github.com/PhemiT/njem'
+                    liveLink='https://njem.vercel.app/'
+                    tools='NextJS, SCSS'
+                    features={['Responsive UI, Rolling Animation']}
                      />
                      <WorkAlt 
                     heading='portfolio contact'

@@ -17,7 +17,7 @@ const About = () => {
                     <h4>Languages:</h4>
                     <p>JavaScript/Typescript, Java</p>
                     <h4>Frameworks/Libraries:</h4>
-                    <p>ReactJS(NextJS), MUI, NodeJS(ExpressJS)</p>
+                    <p>ReactJS(NextJS), MUI, NodeJS(ExpressJS, NestJS)</p>
                     <h4>Storages/Databases:</h4>
                     <p>MongoDB, Postgres</p>
                     <h4>Styling:</h4>

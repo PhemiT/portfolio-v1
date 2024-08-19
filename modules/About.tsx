@@ -15,9 +15,9 @@ const About = () => {
                 <div className="stack heading">
                     <h3>Tools I Use</h3>
                     <h4>Languages:</h4>
-                    <p>JavaScript/Typescript, C#</p>
+                    <p>JavaScript/Typescript, Java</p>
                     <h4>Frameworks/Libraries:</h4>
-                    <p>ReactJS(NextJS), MUI, NodeJS(ExpressJS), ASP.NET</p>
+                    <p>ReactJS(NextJS), MUI, NodeJS(ExpressJS)</p>
                     <h4>Storages/Databases:</h4>
                     <p>MongoDB, Postgres</p>
                     <h4>Styling:</h4>

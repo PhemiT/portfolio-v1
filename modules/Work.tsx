@@ -36,7 +36,7 @@ const Work = () => {
                     repoLink='https://github.com/PhemiT/njem'
                     liveLink='https://njem.vercel.app/'
                     tools='NextJS, SCSS'
-                    features={['Responsive UI, Rolling Animation']}
+                    features={['Responsive UI', 'Rolling Animation']}
                      />
                      <WorkAlt 
                     heading='portfolio contact'

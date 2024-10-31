@@ -23,6 +23,14 @@ const Work = () => {
                 <h3 className='heading'>02. Selected Works</h3>
                 <div className="selected-works">
                     <WorkAlt 
+                    heading='cloudmost'
+                    desc='Dashboard UI'
+                    repoLink='https://github.com/PhemiT/portfolio-contact'
+                    liveLink='https://cloudmost.vercel.app/'
+                    tools='NextJS, SCSS'
+                    features={['Complex UI']}
+                     />
+                    <WorkAlt 
                     heading='paws pet gallery'
                     desc='Pet gallery web app for posting and viewing pet moments.'
                     repoLink='https://github.com/PhemiT/Paws'
@@ -37,14 +45,6 @@ const Work = () => {
                     liveLink='https://njem.vercel.app/'
                     tools='NextJS, SCSS'
                     features={['Responsive UI', 'Rolling Animation']}
-                     />
-                     <WorkAlt 
-                    heading='portfolio contact'
-                    desc='Sample portfolio displaying CRUD operations for managing business contacts.'
-                    repoLink='https://github.com/PhemiT/portfolio-contact'
-                    liveLink='https://portfolio-contact-39rs.onrender.com/'
-                    tools='NodeJS, EJS, MongoDB'
-                    features={['CRUD Operations', 'Authentication & Private Routes', ]}
                      />
                       <WorkAlt 
                     heading='CSR Page'

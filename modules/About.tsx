@@ -16,6 +16,8 @@ const About = () => {
                     <h3>Tools I Use</h3>
                     <h4>Languages:</h4>
                     <p>JavaScript/Typescript, Java</p>
+                    <h4>Web3 Languages:</h4>
+                    <p>Move(Sui Chain), Motoko</p>
                     <h4>Frameworks/Libraries:</h4>
                     <p>ReactJS(NextJS), MUI, NodeJS(ExpressJS, NestJS)</p>
                     <h4>Storages/Databases:</h4>

@@ -24,7 +24,7 @@ const Work = () => {
                 <div className="selected-works">
                     <WorkAlt 
                     heading='cloudmost'
-                    desc='Dashboard UI'
+                    desc='Cloud services dashboard UI'
                     repoLink='https://github.com/PhemiT/portfolio-contact'
                     liveLink='https://cloudmost.vercel.app/'
                     tools='NextJS, SCSS'

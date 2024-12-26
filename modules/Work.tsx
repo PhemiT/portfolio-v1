@@ -28,7 +28,7 @@ const Work = () => {
                     repoLink='https://github.com/PhemiT/portfolio-contact'
                     liveLink='https://cloudmost.vercel.app/'
                     tools='NextJS, SCSS'
-                    features={['Complex UI']}
+                    features={['Dashboard UI', 'Integrated Modals']}
                      />
                     <WorkAlt 
                     heading='paws pet gallery'

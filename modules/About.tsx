@@ -17,15 +17,15 @@ const About = () => {
                     <h4>Languages:</h4>
                     <p>JavaScript/Typescript, Java</p>
                     <h4>Web3 Languages:</h4>
-                    <p>Move(Sui Chain), Motoko</p>
+                    <p>Move(Sui Network), Motoko</p>
                     <h4>Frameworks/Libraries:</h4>
-                    <p>ReactJS(NextJS), MUI, NodeJS(ExpressJS, NestJS)</p>
+                    <p>ReactJS(NextJS, MUI), Angular, NodeJS(ExpressJS, NestJS)</p>
                     <h4>Storages/Databases:</h4>
-                    <p>MongoDB, Postgres</p>
+                    <p>MongoDB, Postgres, SQL</p>
                     <h4>Styling:</h4>
                     <p>CSS, SCSS, Styled Components, TailwindCSS</p>
                     <h4>Other tools:</h4>
-                    <p>Azure, Git/GitHub</p>
+                    <p>Azure, Git/GitHub, WordPress</p>
                 </div>
                 {/* <Resume /> */}
             </div>

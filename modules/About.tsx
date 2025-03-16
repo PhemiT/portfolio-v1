@@ -8,9 +8,7 @@ const About = () => {
             </div>
             <div className="about-body">
                 <p>
-                    Hey there! I'm Bukunmi, I'm a fullstack web developer from Lagos, Nigeria.
-                    I thrive on the challenge of transforming stunning designs into real-life, functioning websites and crafting the robust logic that powers them.
-                    I have about 3 years of experience and am laser-focused on delivering high-performing, scalable, and intuitive web infrastructures.
+                    Hey there! I'm Bukunmi, I'm a fullstack software engineer from Lagos, Nigeria and a computer science undergraduate. I thrive on the challenge of transforming stunning designs into real-life, functioning websites and crafting the robust logic that powers them. I have about 3 years of experience and am laser-focused on delivering high-performing, scalable, and intuitive web infrastructures.
                 </p>
                 <div className="stack heading">
                     <h3>Tools I Use</h3>

@@ -817,7 +817,7 @@ body:not(.modal-active) .scrolled {
         color: $clr-grey;
         border: 1.5px solid transparent;
         cursor: pointer;
-        transition: gap 0.2s ease, color 0.2s ease;
+        transition: gap 0.1s ease, color 0.1s ease;
 
         &:hover {
             gap: 9px;

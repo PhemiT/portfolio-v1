@@ -708,19 +708,6 @@ body:not(.modal-active) .scrolled {
     opacity: 0;
     box-shadow: 0 20px 60px rgba(0, 0, 0, 0.35);
     transition: transform 0.3s cubic-bezier(0.250, 0.460, 0.450, 0.940), opacity 0.3s ease-out;
-
-    &::before {
-        content: "";
-        display: block;
-        height: 5px;
-        width: 100%;
-        background: conic-gradient(#BCD979 12%,
-                #246A73 12%, #246A73 33%,
-                #368F8B 33%, #368F8B 55%,
-                #F3DFC1 55%, #F3DFC1 70%,
-                #8AA8A1 70%, #8AA8A1 87%,
-                #F7D1BA 87%);
-    }
 }
 
 .modal_content {
@@ -786,7 +773,7 @@ body:not(.modal-active) .scrolled {
 }
 
 .modal_content::-webkit-scrollbar-thumb {
-    background: #368F8B;
+    background: $clr-grey;
     height: 30px;
     border: 0.2px solid transparent;
     border-radius: 10px;

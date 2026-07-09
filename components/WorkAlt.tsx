@@ -30,9 +30,11 @@ const WorkAlt:React.FC<WorkProps> = (props) => {
                 ))}
             </div>
             <div className="works_links">
-                <a href={props.repoLink} target="_blank" rel="noopener noreferrer">
-                    <span><Icon icon={ICONS.repo} color='#DDBEA8' size={15} />Repo</span>
-                </a>
+                {props.repoLink && (
+                    <a href={props.repoLink} target="_blank" rel="noopener noreferrer">
+                        <span><Icon icon={ICONS.repo} color='#DDBEA8' size={15} />Repo</span>
+                    </a>
+                )}
                 <a href={props.liveLink} target="_blank" rel="noopener noreferrer">
                     <span><Icon icon={ICONS.live} color='#DDBEA8' size={15} />Live</span>
                 </a>

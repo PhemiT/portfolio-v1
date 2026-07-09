@@ -38,11 +38,24 @@ html {
     scroll-behavior: smooth;
 }
 
+@media (prefers-reduced-motion: reduce) {
+    html {
+        scroll-behavior: auto;
+    }
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+}
+
 body {
     background-color: $clr-bg;
     background-image: $bg-image;
     background-size: cover;
-    color: $clr-grey
+    color: $clr-grey;
 }
 
 button {
@@ -50,6 +63,14 @@ button {
     outline: none;
     margin: 0;
     box-sizing: border-box;
+    font: inherit;
+}
+
+button:focus-visible,
+a:focus-visible {
+    outline: 2px solid $clr-green;
+    outline-offset: 3px;
+    border-radius: 2px;
 }
 
 .mg-container {
@@ -57,70 +78,91 @@ button {
     margin: 0 auto;
 }
 
-.display-none{ display: none !important;}
+.display-none {
+    display: none !important;
+}
 
 .heading {
     >h3 {
         font-family: $ff-pixel;
         text-transform: uppercase;
         font-size: 25px;
-        letter-spacing: .5px;
+        letter-spacing: 1px;
+        position: relative;
+        display: inline-block;
+        padding-bottom: 6px;
+
+        &::after {
+            content: "";
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 40px;
+            height: 3px;
+            background-color: $clr-green;
+            border-radius: 2px;
+        }
     }
 }
 
- p {
+p {
     font-size: 19px;
     font-weight: 500;
- }
+    line-height: 1.6;
+}
 
- .gradient-text {
+.gradient-text {
     color: transparent;
-    background: conic-gradient(
-      #BCD979 12%, 
-      #246A73 12%, #246A73 33%, 
-      #368F8B 33%, #368F8B 55%, 
-      #F3DFC1 55%, #F3DFC1 70%, 
-      #8AA8A1 70%, #8AA8A1 87%, 
-      #F7D1BA 87%);
+    background: conic-gradient(#BCD979 12%,
+            #246A73 12%, #246A73 33%,
+            #368F8B 33%, #368F8B 55%,
+            #F3DFC1 55%, #F3DFC1 70%,
+            #8AA8A1 70%, #8AA8A1 87%,
+            #F7D1BA 87%);
     background-size: 50%;
-    background-clip: text;  
+    background-clip: text;
     -webkit-background-clip: text;
     animation: expand-rev 0.5s ease forwards;
-  }
-  
-  .gradient-text:hover {
+}
+
+.gradient-text:hover {
     animation: expand 0.5s ease forwards;
-  }
-  
-  @keyframes expand {
+}
+
+@keyframes expand {
     0% {
-      background-size: 50%;
-      background-position: 0 0;
+        background-size: 50%;
+        background-position: 0 0;
     }
+
     20% {
-      background-size: 55%;
-      background-position: 0 1em;
+        background-size: 55%;
+        background-position: 0 1em;
     }
+
     100% {
-      background-size: 325%;
-      background-position: -10em -4em;
+        background-size: 325%;
+        background-position: -10em -4em;
     }
-  }
-  
-  @keyframes expand-rev {
+}
+
+@keyframes expand-rev {
     0% {
-      background-size: 325%;
-      background-position: -10em -4em;
+        background-size: 325%;
+        background-position: -10em -4em;
     }
+
     20% {
-      background-size: 55%;
-      background-position: 0 1em;
+        background-size: 55%;
+        background-position: 0 1em;
     }
+
     100% {
-      background-size: 50%;
-      background-position: 0 0;
+        background-size: 50%;
+        background-position: 0 0;
     }
-  }
+}
+
 /****************//****************/
 /* NAVBAR */
 /****************//****************/
@@ -130,6 +172,7 @@ button {
     justify-content: space-between;
     align-items: center;
     z-index: 2;
+    transition: padding 0.3s ease;
 
     div[class="logo"] {
         h3 {
@@ -148,6 +191,12 @@ button {
 
         span {
             cursor: pointer;
+            transition: color 0.2s ease, transform 0.2s ease;
+
+            &:hover {
+                color: $clr-green;
+                transform: translateX(2px);
+            }
         }
     }
 }
@@ -155,12 +204,16 @@ button {
 body:not(.modal-active) .scrolled {
     position: sticky;
     top: 20px;
-    background-color: rgb(221, 190, 168, 0.8);
+    background-color: rgb(221, 190, 168, 0.75);
     background-image: $bg-image;
     background-size: cover;
     border: 1.5px solid $clr-grey;
     padding: 20px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+    transition: box-shadow 0.3s ease, background-color 0.3s ease;
 }
+
 /****************//****************/
 /* END OF NAVBAR */
 /****************//****************/
@@ -186,14 +239,21 @@ body:not(.modal-active) .scrolled {
     right: 0;
     padding: 25px;
     z-index: 1;
+    box-shadow: 0 -10px 40px rgba(0, 0, 0, 0.25);
 
     a {
         text-transform: uppercase;
         font-family: $ff-heading;
         font-weight: 800;
-        transition: $hvr-transition;
+        transition: $hvr-transition, letter-spacing 0.2s ease;
+
+        &:hover {
+            letter-spacing: 1px;
+            color: #BCD979;
+        }
     }
 }
+
 /****************//****************/
 /* END OF NAVMENU */
 /****************//****************/
@@ -210,12 +270,17 @@ body:not(.modal-active) .scrolled {
 
     img {
         width: 10%;
+        transition: transform 0.4s ease;
+
+        &:hover {
+            transform: rotate(-4deg) scale(1.05);
+        }
     }
 
     h1 {
         font-family: $ff-heading;
-        font-size: 9.2vw;
-        line-height: 9.9vw;
+        font-size: clamp(48px, 9.2vw, 140px);
+        line-height: 1.05;
         max-width: 100%;
         font-weight: 800;
         text-transform: uppercase;
@@ -241,15 +306,19 @@ body:not(.modal-active) .scrolled {
             font-family: $ff-style;
             font-size: 13.1px;
             padding-inline: 3px;
-            transition: $hvr-transition;
+            border-radius: 2px;
+            transition: $hvr-transition, transform 0.2s ease;
+            display: inline-block;
         }
 
         span[class="highlight"]:hover {
             color: $clr-green;
             background-color: $clr-grey;
+            transform: translateY(-2px);
         }
     }
 }
+
 /****************//****************/
 /* END OF HEADER */
 /****************//****************/
@@ -305,7 +374,7 @@ body:not(.modal-active) .scrolled {
     padding-bottom: 80px;
 
     h3[class='heading'] {
-        padding-bottom: 30px;
+        margin-bottom: 30px;
     }
 
     .selected-works {
@@ -315,6 +384,7 @@ body:not(.modal-active) .scrolled {
         justify-items: flex-start;
         align-items: flex-start;
         gap: 25px;
+        margin-top: 20px;
     }
 }
 
@@ -325,14 +395,20 @@ body:not(.modal-active) .scrolled {
     color: $clr-bg;
     width: 100%;
     padding: 20px;
-    transition: all 200ms ease;
+    border-radius: 4px;
+    transition: transform 250ms ease, box-shadow 250ms ease;
+
+    &:hover {
+        transform: translateY(-6px);
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 16px 32px 0px;
+    }
 
     h3 {
-       font-family: $ff-heading;
-       font-weight: 800;
-       padding: 0;
-       padding-block: 10px  20px; 
-       text-transform: capitalize;
+        font-family: $ff-heading;
+        font-weight: 800;
+        padding: 0;
+        padding-block: 10px 20px;
+        text-transform: capitalize;
     }
 
     .works_info {
@@ -356,6 +432,7 @@ body:not(.modal-active) .scrolled {
             padding-block: 15px;
             display: flex;
             align-items: center;
+            flex-wrap: wrap;
             gap: 10px;
 
             span {
@@ -369,6 +446,12 @@ body:not(.modal-active) .scrolled {
                 padding: 5px 15px;
                 font-weight: 600;
                 height: 34px;
+                transition: background-color 0.2s ease, transform 0.2s ease;
+
+                &:hover {
+                    background-color: #F3DFC1;
+                    transform: translateY(-2px);
+                }
             }
         }
     }
@@ -384,9 +467,16 @@ body:not(.modal-active) .scrolled {
             gap: 3px;
             font-family: $ff-pixel;
             text-transform: uppercase;
+            transition: gap 0.2s ease, opacity 0.2s ease;
+
+            &:hover {
+                gap: 6px;
+                opacity: 0.8;
+            }
         }
     }
 }
+
 /****************//****************/
 /* END OF WORK */
 /****************//****************/
@@ -402,14 +492,14 @@ body:not(.modal-active) .scrolled {
     padding-bottom: 80px;
 
     h3 {
-        padding-bottom: 25px;
+        margin-bottom: 25px;
     }
 
     h1 {
         text-transform: capitalize;
         font-family: $ff-heading;
         font-weight: 800;
-        font-size: 50px;
+        font-size: clamp(32px, 5vw, 50px);
         text-align: center;
     }
 
@@ -432,16 +522,24 @@ body:not(.modal-active) .scrolled {
         background-image: $bg-image;
         color: $clr-bg;
         border: 1.5px solid transparent;
+        border-radius: 3px;
         cursor: pointer;
-        transition: $hvr-transition;
+        transition: $hvr-transition, transform 0.2s ease, box-shadow 0.2s ease;
 
         &:hover {
             color: $clr-grey;
             background: transparent;
             border: 1.5px solid $clr-grey;
+            transform: translateY(-2px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+        }
+
+        &:active {
+            transform: translateY(0);
         }
     }
 }
+
 /****************//****************/
 /* END OF CONTACT */
 /****************//****************/
@@ -459,8 +557,18 @@ body:not(.modal-active) .scrolled {
         display: flex;
         align-items: center;
         gap: 17px;
+
+        a {
+            transition: transform 0.2s ease, opacity 0.2s ease;
+
+            &:hover {
+                transform: translateY(-3px);
+                opacity: 0.75;
+            }
+        }
     }
 }
+
 /****************//****************/
 /* END OF FOOTER */
 /****************//****************/
@@ -506,16 +614,16 @@ body:not(.modal-active) .scrolled {
         padding: 15px;
     }
 
-    .folio-header{
+    .folio-header {
         padding-block: 10px 50px;
-        
+
         img {
             width: 25%;
         }
 
         h1 {
-            font-size: 9.5vw;
-            line-height: 10.1vw;
+            font-size: clamp(36px, 9.5vw, 80px);
+            line-height: 1.08;
         }
 
         p {
@@ -527,7 +635,7 @@ body:not(.modal-active) .scrolled {
                 font-size: 13px;
             }
         }
-    } 
+    }
 
     .folio-about {
         div[class="about-body"] {
@@ -561,6 +669,7 @@ body:not(.modal-active) .scrolled {
 @media screen and (max-width: 650px) {
     .folio-work {
         align-items: flex-start;
+
         .selected-works {
             .work {
                 width: 100%;
@@ -583,6 +692,8 @@ body:not(.modal-active) .scrolled {
     justify-content: center;
     align-items: center;
     background-color: rgb(221, 190, 168, 0.9);
+    backdrop-filter: blur(4px);
+    z-index: 10;
     transition: opacity 0.3s ease-out, visibility 0.3s ease-out 0.3s;
 }
 
@@ -590,37 +701,83 @@ body:not(.modal-active) .scrolled {
     position: relative;
     width: 50%;
     border: 2px solid $clr-black;
+    border-radius: 6px;
     max-height: 70vh;
     overflow-y: auto;
     transform: scale(0.7);
-    opacity: 0; 
-    transition: transform 0.3s ease-out, opacity 0.3s ease-out;
+    opacity: 0;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.35);
+    transition: transform 0.3s cubic-bezier(0.250, 0.460, 0.450, 0.940), opacity 0.3s ease-out;
 }
 
 .modal_content {
     overflow-y: auto;
     max-height: 50vh;
+    padding: 20px;
+
+    h3 {
+        font-family: $ff-heading;
+        font-weight: 800;
+        text-transform: capitalize;
+        font-size: 22px;
+        color: $clr-black;
+        padding-bottom: 6px;
+    }
+
+    p {
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 1.5;
+        color: $clr-black;
+        padding-bottom: 4px;
+    }
+
+    a {
+        color: $clr-black;
+        transition: opacity 0.15s ease;
+
+        &:hover {
+            opacity: 0.7;
+        }
+
+        span {
+            display: inline-flex;
+            align-items: center;
+            gap: 4px;
+            font-family: $ff-pixel;
+            text-transform: uppercase;
+            font-size: 14px;
+            padding-top: 10px;
+            transition: gap 0.15s ease;
+        }
+
+        &:hover span {
+            gap: 7px;
+        }
+    }
+
+    hr {
+        border: none;
+        border-top: 1.5px dashed rgba(0, 0, 0, 0.25);
+        margin-block: 18px;
+    }
 }
+
 .modal_content::-webkit-scrollbar {
     display: flex;
-    width: 12px; 
+    width: 12px;
 }
 
 .modal_content::-webkit-scrollbar-track {
-    background: transparent; 
+    background: transparent;
 }
 
 .modal_content::-webkit-scrollbar-thumb {
-    background: $clr-grey;  
+    background: $clr-grey;
     height: 30px;
     border: 0.2px solid transparent;
     border-radius: 10px;
 }
-
-/* ::-webkit-scrollbar-thumb:hover {
-    background: #555;  
-} */
-
 
 .modal_overlay.modal-open {
     opacity: 1;
@@ -653,6 +810,18 @@ body:not(.modal-active) .scrolled {
 
     button {
         cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 32px;
+        height: 32px;
+        border-radius: 50%;
+        transition: transform 0.2s ease, background-color 0.2s ease;
+
+        &:hover {
+            transform: rotate(90deg);
+            background-color: rgba(0, 0, 0, 0.08);
+        }
     }
 }
 
@@ -662,10 +831,10 @@ body:not(.modal-active) .scrolled {
     }
 }
 
-
 /* RESUME BTN */
 .resume_main {
     padding-block: 20px;
+
     button {
         background: transparent;
         font-family: $ff-heading;
@@ -676,6 +845,12 @@ body:not(.modal-active) .scrolled {
         display: flex;
         align-items: center;
         gap: 5px;
+        transition: gap 0.2s ease, color 0.2s ease;
+
+        &:hover {
+            gap: 9px;
+            color: $clr-green;
+        }
     }
 }
 
@@ -697,6 +872,12 @@ body:not(.modal-active) .scrolled {
         color: $clr-grey;
         border: 1.5px solid transparent;
         cursor: pointer;
+        transition: gap 0.1s ease, color 0.1s ease;
+
+        &:hover {
+            gap: 9px;
+            color: $clr-green;
+        }
     }
 }
 
@@ -707,4 +888,3 @@ body:not(.modal-active) .scrolled {
 .morework {
     padding-block: 15px;
 }
-

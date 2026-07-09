@@ -6,7 +6,7 @@ interface WorkProps  {
     heading: string;
     desc: string | ReactNode;
     tools: string;
-    repoLink: string;
+    repoLink?: string;
     liveLink: string;
     features: string[];
 }

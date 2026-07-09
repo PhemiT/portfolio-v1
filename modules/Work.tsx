@@ -2,7 +2,6 @@ import Icon from '../components/Icon'
 import MoreWork from '../components/MoreWork'
 import WorkAlt from '../components/WorkAlt'
 import ICONS from '../constants/ICONS'
-
 const Heyfood = () => {
     return (
         <a 
@@ -15,13 +14,19 @@ const Heyfood = () => {
         </a>
     )
 }
-
 const Work = () => {
     return (
         <>
             <div className="folio-work mg-container heading" id="work">
                 <h3 className='heading'>02. Selected Works</h3>
                 <div className="selected-works">
+                    <WorkAlt 
+                    heading='Van Iyke Music Empire'
+                    desc='Digital Content Website'
+                    liveLink='https://www.vaniykemusicempire.com/'
+                    tools='NextJS, Node/Express, Supabase, Cloudflare'
+                    features={['HLS Video Streaming', 'Multi-Provider Payments', 'Google OAuth', 'PDF Flipbook Viewer']}
+                     />
                     <WorkAlt 
                     heading='cloudmost'
                     desc='Cloud services dashboard UI'
@@ -37,14 +42,6 @@ const Work = () => {
                     liveLink='https://paws-app.vercel.app/'
                     tools='NextJS, SCSS, MongoDB'
                     features={['Responsive UI','Server-Side Rendering', 'Attractive Slider']}
-                     />
-                     <WorkAlt 
-                    heading='NJEM'
-                    desc='Travel Agency Website'
-                    repoLink='https://github.com/PhemiT/njem'
-                    liveLink='https://njem.vercel.app/'
-                    tools='NextJS, SCSS'
-                    features={['Responsive UI', 'Rolling Animation']}
                      />
                       <WorkAlt 
                     heading='CSR Page'
@@ -67,5 +64,4 @@ const Work = () => {
         </>
     )
 }
-
 export default Work

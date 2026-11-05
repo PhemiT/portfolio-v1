@@ -1,67 +1,35 @@
-import Icon from '../components/Icon'
-import MoreWork from '../components/MoreWork'
+import React from 'react'
 import WorkAlt from '../components/WorkAlt'
-import ICONS from '../constants/ICONS'
-const Heyfood = () => {
-    return (
-        <a 
-        href="https://heyfood.africa/stores?src=aggregator"
-        style={{
-            textDecoration: 'underline'
-        }}
-        >
-            heyfood
-        </a>
-    )
-}
+import MoreWork from '../components/MoreWork'
+import { selectedProjects } from '../data/projects'
+
 const Work = () => {
     return (
-        <>
-            <div className="folio-work mg-container heading" id="work">
-                <h3 className='heading'>02. Selected Works</h3>
-                <div className="selected-works">
-                    <WorkAlt 
-                    heading='Van Iyke Music Empire'
-                    desc='Digital Content Website'
-                    liveLink='https://www.vaniykemusicempire.com/'
-                    tools='NextJS, Node/Express, Supabase, Cloudflare'
-                    features={['HLS Video Streaming', 'Multi-Provider Payments', 'Google OAuth', 'PDF Flipbook Viewer']}
-                     />
-                    <WorkAlt 
-                    heading='cloudmost'
-                    desc='Cloud services dashboard UI'
-                    repoLink='https://github.com/PhemiT/portfolio-contact'
-                    liveLink='https://cloudmost.vercel.app/'
-                    tools='NextJS, SCSS'
-                    features={['Dashboard UI', 'Integrated Modals']}
-                     />
-                    <WorkAlt 
-                    heading='paws pet gallery'
-                    desc='Pet gallery web app for posting and viewing pet moments.'
-                    repoLink='https://github.com/PhemiT/Paws'
-                    liveLink='https://paws-app.vercel.app/'
-                    tools='NextJS, SCSS, MongoDB'
-                    features={['Responsive UI','Server-Side Rendering', 'Attractive Slider']}
-                     />
-                      <WorkAlt 
-                    heading='CSR Page'
-                    desc={<>
-                        Skim Clone of this <Heyfood /> page.
-                    </>}
-                    repoLink='https://github.com/PhemiT/test-client'
-                    liveLink='https://test-client-alpha.vercel.app/'
-                    tools='ReactJS(MUI), NodeJS, MongoDB'
-                    features={['API Endpoints', 'Client-Side Rendering', 'Responsive UI']}
-                     />
-                </div>
-                    {/* <div className="works-cta">
-                        <a href="https://github.com/PhemiT?tab=repositories" target="_blank" rel="noopener noreferrer">
-                            <button>view more<Icon icon={ICONS.live}/></button>
-                        </a>
-                    </div> */}
-                    <MoreWork />
+        <section className="folio-work mg-container" id="work">
+            <div className="heading">
+                <h3 className="heading"><span>02.</span> Selected Works</h3>
             </div>
-        </>
+            <p className="work-intro">A curated selection of production applications, dashboards, and client platforms.</p>
+
+            <div className="selected-works">
+                {selectedProjects.map((project) => (
+                    <WorkAlt
+                        key={project.id}
+                        heading={project.heading}
+                        desc={project.desc}
+                        tools={project.tools}
+                        repoLink={project.repoLink}
+                        liveLink={project.liveLink}
+                        features={project.features}
+                        status={project.status}
+                        featured={project.featured}
+                    />
+                ))}
+            </div>
+
+            <MoreWork />
+        </section>
     )
 }
+
 export default Work
